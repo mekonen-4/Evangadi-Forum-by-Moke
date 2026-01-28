@@ -1,0 +1,191 @@
+.pageWrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 30px 20px;
+}
+
+/* Question Section */
+.mainTitle {
+  font-size: 27px;
+  font-weight: 400;
+  color: #3b4045;
+  margin-bottom: 8px;
+}
+
+.questionMetaTop {
+  font-size: 13px;
+  color: #6a737c;
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+
+.blueText {
+  color: #0074cc;
+}
+
+.divider {
+  border: 0;
+  border-top: 1px solid #e3e6e8;
+  margin-bottom: 20px;
+}
+
+.questionDesc {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #232629;
+  white-space: pre-wrap;
+}
+
+/* Answer Header */
+.answerHeader {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  font-weight: 400;
+  border-bottom: 1px solid #e3e6e8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Answer Card & Flex Layout */
+.answerCard {
+  padding: 20px 0;
+  border-bottom: 1px solid #e3e6e8;
+}
+
+.answerHeaderFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.answerText {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #232629;
+  flex: 1;
+}
+
+/* Icons & Actions */
+.actionIcons {
+  display: flex;
+  gap: 12px;
+  color: #838c95;
+}
+
+.actionIcons svg {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.actionIcons svg:hover {
+  color: #0a95ff;
+}
+
+.actionIcons svg:last-child:hover {
+  color: #d0393e;
+}
+
+/* Inline Edit Form */
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.editTextarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border: 1px solid #0a95ff;
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+.editBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.saveBtn {
+  background-color: #0a95ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background: none;
+  border: 1px solid #babfc4;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Signature Card */
+.signatureWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.userSignature {
+  width: 200px;
+  padding: 7px;
+  background-color: #edf5fd;
+  border-radius: 4px;
+}
+
+.userActionDate {
+  font-size: 12px;
+  color: #6a737c;
+  display: block;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signatureName {
+  font-size: 13px;
+  color: #0074cc;
+}
+
+/* Post Answer Form */
+.postAnswerSection {
+  margin-top: 40px;
+}
+
+.postAnswerSection textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 12px;
+  border: 1px solid #babfc4;
+  border-radius: 3px;
+}
+
+.submitBtn {
+  margin-top: 15px;
+  background-color: #0a95ff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,134 @@
+.pageWrapper {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9f9;
+    /* Soft background common in forums */
+    font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    /* SYNCED WITH HOME PAGE */
+    padding: 40px 20px;
+}
+
+.mainTitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: #232629;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Instructions Card */
+.stepsCard {
+    background-color: #ebf4fb;
+    border: 1px solid #a6d3f2;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 40px;
+}
+
+.stepList {
+    margin: 0;
+    padding-left: 20px;
+    color: #3b4045;
+}
+
+.stepList li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Form Styling */
+.formSection {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-light);
+}
+
+.formHeader {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e3e6e8;
+    padding-bottom: 10px;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+}
+
+.questionForm input,
+.questionForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #babfc4;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+/* Focus state matching Stack Overflow Blue */
+.questionForm input:focus,
+.questionForm textarea:focus {
+    outline: none;
+    border-color: #6bbbf7;
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+/* Buttons */
+.actionButtons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.postBtn {
+    background-color: var(--blue-main);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.postBtn:hover {
+    background-color: #0074cc;
+}
+
+.backLink {
+    color: #6a737c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.backLink:hover {
+    color: var(--blue-main);
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .actionButtons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .postBtn {
+        text-align: center;
+    }
+}

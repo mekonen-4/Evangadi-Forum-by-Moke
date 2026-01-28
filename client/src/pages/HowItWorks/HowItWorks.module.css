@@ -1,0 +1,128 @@
+.page_wrapper {
+  background-color: #ffffff;
+  min-height: 80vh;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.container {
+  max-width: 1050px; /* SYNCED WITH ENTIRE PROJECT */
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #232629;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #6a737c;
+}
+
+/* Steps Grid Logic */
+.steps_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.step_card {
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #e3e6e8;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.step_number {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--primary-color); /* Uses your Evangadi Orange */
+  margin-bottom: 15px;
+}
+
+.step_card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #232629;
+}
+
+.step_card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3b4045;
+  margin: 0;
+}
+
+/* Call to Action */
+.cta_section {
+  text-align: center;
+  border-top: 1px solid #e3e6e8;
+  padding-top: 50px;
+}
+
+.primary_btn {
+  background-color: var(--blue-main);
+  color: white;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.primary_btn:hover {
+  background-color: #0074cc;
+}
+
+.login_text {
+  margin-top: 20px;
+  color: #6a737c;
+}
+
+.login_text a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login_text a:hover {
+  text-decoration: underline;
+}
+.fake_link {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.fake_link:hover {
+  text-decoration: underline;
+}
+/* Responsive Sync */
+@media (max-width: 992px) {
+  .steps_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

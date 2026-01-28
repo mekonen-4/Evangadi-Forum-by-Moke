@@ -1,0 +1,173 @@
+.formContainer {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 95%;
+  /* Ensures it doesn't touch screen edges on mobile */
+  max-width: 480px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: var(--body-font);
+  /* Centering fix */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-family: var(--header-font);
+  font-size: 22px;
+  font-weight: 600;
+  color: #232629;
+  margin-bottom: 10px;
+}
+
+.switchText {
+  text-align: center;
+  font-size: 14px;
+  color: #6a737c;
+  margin-bottom: 25px;
+}
+
+.switchLink {
+  color: var(--primary-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.switchLink:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common Input Style */
+.inputField {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #babfc4;
+  border-radius: 4px;
+  font-size: 16px;
+  /* Prevents auto-zoom on mobile */
+  transition: all 0.2s ease;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--blue-main);
+  box-shadow: 0 0 0 3px rgba(81, 108, 240, 0.15);
+}
+
+/* Split Name Row */
+.nameInputsRow {
+  display: flex;
+  gap: 15px;
+}
+
+.nameInputsRow .inputField {
+  flex: 1;
+}
+
+/* Password & Icon Logic */
+.passwordWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.passwordInput {
+  padding-right: 45px;
+  /* Space for the Eye icon */
+}
+
+.iconContainer {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  /* Aligns with center of input */
+  color: #6a737c;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer:hover {
+  color: var(--blue-main);
+}
+
+/* Terms and Conditions */
+.termsText {
+  font-size: 13px;
+  color: #6a737c;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.termsText a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.termsText a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.submitBtn {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--blue-main);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #3e56c4;
+}
+
+.error {
+  color: #d0393e;
+  background-color: #fdf2f2;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .formContainer {
+    /* Perfectly centers on smaller screens */
+    width: 90%;
+    padding: 30px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    width: 100%;
+    /* Take full width minus container padding */
+    padding: 25px 15px;
+    box-shadow: none;
+    border: 1px solid #e3e6e8;
+  }
+
+  .nameInputsRow {
+    flex-direction: column;
+    /* Stacks First/Last name on mobile */
+    gap: 0;
+  }
+}
