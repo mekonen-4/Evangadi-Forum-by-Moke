@@ -2,7 +2,7 @@ import express from "express";
 const router = express.Router();
 
 // Updated import to use named export and correct path per your request
-import { authMiddleware } from "../middlewares/auth.middleware.js";
+import { authMiddleware } from "../middlewares/auth.Middleware.js";
 
 import {
   postAnswer,
