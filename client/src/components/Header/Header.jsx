@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom"; // Added useNavigate
 import { Navbar, Nav, Button, Container } from "react-bootstrap";
 import classes from "./header.module.css";
-import EvangadiLogo from "../../Assets/Images/evangadi-logo-header.png";
+import EvangadiLogo from "../../assets/Images/evangadi-logo-header.png";
 import { UserState } from "../../App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 

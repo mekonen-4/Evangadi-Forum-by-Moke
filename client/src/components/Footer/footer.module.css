@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-around;
   padding-top: 2.5rem;
- 
 }
 .footer h5 {
   color: #ffffff;
@@ -88,7 +87,7 @@
 /* Terms and privacy css */
 
 .termsHeader {
-  background-image: url("../../Assets/Images/bg-transparent6.png");
+  background-image: url("../../assets/Images/bg-transparent6.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
